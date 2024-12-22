@@ -1,0 +1,17 @@
+.wrapper{
+    max-width: 1920px;
+    height: auto;
+}
+
+.header{
+    
+}
+
+.container{
+    background-color: grey;
+    max-width: 1200px;
+    height: auto;
+
+    margin: auto;
+
+}
