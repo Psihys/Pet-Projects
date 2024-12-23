@@ -1,79 +1,484 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+
+    <link rel="stylesheet" href="./assists/Styles/reset.css" />
+    <link rel="stylesheet" href="./assists/Styles/main.css" />
+    <link rel="stylesheet" href="./assists/Styles/shop-page.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="wrapper">
-        <header class="header">
-          <div class="header-container">
-            <nav class="navigation">
-              <a href="#" class="logo">
-                <img src="./assists/Images/logo.png" alt="logo" />
-                <p>Furniro</p>
-              </a>
-  
-              <ul class="menu-list">
-                <li class="menu-item">
-                  <a href="#" class="menu-link">Home</a>
+      <header class="header">
+        <div class="header-container">
+          <nav class="navigation">
+            <a href="#" class="logo">
+              <img src="./assists/Images/logo.png" alt="logo" />
+              <p>Furniro</p>
+            </a>
+
+            <ul class="menu-list">
+              <li class="menu-item">
+                <a href="home-page.html" class="menu-link">Home</a>
+              </li>
+              <li class="menu-item">
+                <a href="shop-page.html" class="menu-link">Shop</a>
+              </li>
+              <li class="menu-item">
+                <a href="about-page.html" class="menu-link">About</a>
+              </li>
+              <li class="menu-item">
+                <a href="contact-page.html" class="menu-link">Contact</a>
+              </li>
+            </ul>
+
+            <div class="nav-icons">
+              <ul class="icons-list">
+                <li class="icon-item">
+                  <a href="#" class="icon-link">
+                    <span class="material-symbols-outlined">
+                      account_circle
+                    </span>
+                  </a>
                 </li>
-                <li class="menu-item">
-                  <a href="#" class="menu-link">Shop</a>
+
+                <li class="icon-item">
+                  <a href="#" class="icon-link">
+                    <span class="material-symbols-outlined">search</span>
+                  </a>
                 </li>
-                <li class="menu-item">
-                  <a href="#" class="menu-link">About</a>
+
+                <li class="icon-item">
+                  <a href="#" class="icon-link">
+                    <span class="material-symbols-outlined">favorite</span>
+                  </a>
                 </li>
-                <li class="menu-item">
-                  <a href="#" class="menu-link">Contact</a>
+
+                <li class="icon-item">
+                  <a href="#" class="icon-link">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                  </a>
                 </li>
               </ul>
-  
-              <div class="nav-icons">
-                <ul class="icons-list">
-                  <li class="icon-item">
-                    <a href="#" class="icon-link">
-                      <span class="material-symbols-outlined">
-                        account_circle
-                      </span>
-                    </a>
-                  </li>
-  
-                  <li class="icon-item">
-                    <a href="#" class="icon-link">
-                      <span class="material-symbols-outlined">search</span>
-                    </a>
-                  </li>
-  
-                  <li class="icon-item">
-                    <a href="#" class="icon-link">
-                      <span class="material-symbols-outlined">favorite</span>
-                    </a>
-                  </li>
-  
-                  <li class="icon-item">
-                    <a href="#" class="icon-link">
-                      <span class="material-symbols-outlined">shopping_cart</span>
-                    </a>
-                  </li>
-                </ul>
+            </div>
+          </nav>
+
+          <div class="vector">
+            <h1 class="vector-title">Shop</h1>
+            <div class="vector-steps">
+              <a href="home-page.html" class="home-link">Home</a>
+              <span class="material-symbols-outlined">chevron_right</span>
+              <a href="shop-page.html" class="shop-link">Shop</a>
+            </div>
+          </div>
+
+          <div class="functional-panel">
+            <div class="filter-menu">
+              <button class="filter-button">
+                <span class="material-symbols-outlined">tune</span>
+                <p class="filter-button-text">Filter</p>
+              </button>
+
+              <button class="apps-button">
+                <span class="material-symbols-outlined">apps</span>
+              </button>
+
+              <button class="splitscreen-button">
+                <span class="material-symbols-outlined">splitscreen</span>
+              </button>
+            </div>
+            <div class="products-amount">
+              <div class="amount">
+                <p class="amount-text">Show</p>
+                <button class="amount-button">16</button>
               </div>
-            </nav>
-  
-            <div class="introduction">
-              <div class="introduction-block">
-                <p class="new-arrival">New Arrival</p>
-                <h1 class="first-head">Discover Our New Collection</h1>
-                <p class="intro-discription">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                  tellus, luctus nec ullamcorper mattis.
-                </p>
-                <button class="buy-now-button">Buy now</button>
+
+              <div class="sorting">
+                <p class="sorting-text">Sort by</p>
+                <button class="sorting-button">Popularity</button>
               </div>
             </div>
           </div>
-        </header>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="products">
+          <h2 class="product-title">Our Products</h2>
+          <ul class="products-list">
+            <li class="product-card">
+              <a href="#" class="product-card-link">
+                <img
+                  src="./assists/Images/products/image1.png"
+                  alt="sofa"
+                  class="product-card-image"
+                />
+                <div class="product-card-wrapper">
+                  <h3 class="product-card-title">Syltherine</h3>
+                  <p class="product-card-discription">Stylish cafe chair</p>
+                  <p class="product-card-price">70 euro</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-card">
+              <a href="#" class="product-card-link">
+                <img
+                  src="./assists/Images/products/image2.png"
+                  alt="sofa"
+                  class="product-card-image"
+                />
+                <div class="product-card-wrapper">
+                  <h3 class="product-card-title">Leviosa</h3>
+                  <p class="product-card-discription">Stylish cafe chair</p>
+                  <p class="product-card-price">40 euro</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-card">
+              <a href="#" class="product-card-link">
+                <img
+                  src="./assists/Images/products/image3.png"
+                  alt="sofa"
+                  class="product-card-image"
+                />
+                <div class="product-card-wrapper">
+                  <h3 class="product-card-title">Lolito</h3>
+                  <p class="product-card-discription">Stylish cafe chair</p>
+                  <p class="product-card-price">1000 euro</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-card">
+              <a href="#" class="product-card-link">
+                <img
+                  src="./assists/Images/products/image4.png"
+                  alt="sofa"
+                  class="product-card-image"
+                />
+                <div class="product-card-wrapper">
+                  <h3 class="product-card-title">Respira</h3>
+                  <p class="product-card-discription">Stylish cafe chair</p>
+                  <p class="product-card-price">2000 euro</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-card">
+              <a href="#" class="product-card-link">
+                <img
+                  src="./assists/Images/products/Image5.png"
+                  alt="sofa"
+                  class="product-card-image"
+                />
+                <div class="product-card-wrapper">
+                  <h3 class="product-card-title">Grifo</h3>
+                  <p class="product-card-discription">Stylish cafe chair</p>
+                  <p class="product-card-price">100 euro</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-card">
+              <a href="#" class="product-card-link">
+                <img
+                  src="./assists/Images/products/image6.png"
+                  alt="sofa"
+                  class="product-card-image"
+                />
+                <div class="product-card-wrapper">
+                  <h3 class="product-card-title">Muggo</h3>
+                  <p class="product-card-discription">Stylish cafe chair</p>
+                  <p class="product-card-price">700 euro</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-card">
+              <a href="#" class="product-card-link">
+                <img
+                  src="./assists/Images/products/image7.png"
+                  alt="sofa"
+                  class="product-card-image"
+                />
+                <div class="product-card-wrapper">
+                  <h3 class="product-card-title">Pingky</h3>
+                  <p class="product-card-discription">Stylish cafe chair</p>
+                  <p class="product-card-price">800 euro</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-card">
+              <a href="#" class="product-card-link">
+                <img
+                  src="./assists/Images/products/image8.png"
+                  alt="sofa"
+                  class="product-card-image"
+                />
+                <div class="product-card-wrapper">
+                  <h3 class="product-card-title">Potty</h3>
+                  <p class="product-card-discription">Stylish cafe chair</p>
+                  <p class="product-card-price">850 euro</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-card">
+              <a href="#" class="product-card-link">
+                <img
+                  src="./assists/Images/products/image1.png"
+                  alt="sofa"
+                  class="product-card-image"
+                />
+                <div class="product-card-wrapper">
+                  <h3 class="product-card-title">Syltherine</h3>
+                  <p class="product-card-discription">Stylish cafe chair</p>
+                  <p class="product-card-price">70 euro</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-card">
+              <a href="#" class="product-card-link">
+                <img
+                  src="./assists/Images/products/image2.png"
+                  alt="sofa"
+                  class="product-card-image"
+                />
+                <div class="product-card-wrapper">
+                  <h3 class="product-card-title">Leviosa</h3>
+                  <p class="product-card-discription">Stylish cafe chair</p>
+                  <p class="product-card-price">40 euro</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-card">
+              <a href="#" class="product-card-link">
+                <img
+                  src="./assists/Images/products/image3.png"
+                  alt="sofa"
+                  class="product-card-image"
+                />
+                <div class="product-card-wrapper">
+                  <h3 class="product-card-title">Lolito</h3>
+                  <p class="product-card-discription">Stylish cafe chair</p>
+                  <p class="product-card-price">1000 euro</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-card">
+              <a href="#" class="product-card-link">
+                <img
+                  src="./assists/Images/products/image4.png"
+                  alt="sofa"
+                  class="product-card-image"
+                />
+                <div class="product-card-wrapper">
+                  <h3 class="product-card-title">Respira</h3>
+                  <p class="product-card-discription">Stylish cafe chair</p>
+                  <p class="product-card-price">2000 euro</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-card">
+              <a href="#" class="product-card-link">
+                <img
+                  src="./assists/Images/products/Image5.png"
+                  alt="sofa"
+                  class="product-card-image"
+                />
+                <div class="product-card-wrapper">
+                  <h3 class="product-card-title">Grifo</h3>
+                  <p class="product-card-discription">Stylish cafe chair</p>
+                  <p class="product-card-price">100 euro</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-card">
+              <a href="#" class="product-card-link">
+                <img
+                  src="./assists/Images/products/image6.png"
+                  alt="sofa"
+                  class="product-card-image"
+                />
+                <div class="product-card-wrapper">
+                  <h3 class="product-card-title">Muggo</h3>
+                  <p class="product-card-discription">Stylish cafe chair</p>
+                  <p class="product-card-price">700 euro</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-card">
+              <a href="#" class="product-card-link">
+                <img
+                  src="./assists/Images/products/image7.png"
+                  alt="sofa"
+                  class="product-card-image"
+                />
+                <div class="product-card-wrapper">
+                  <h3 class="product-card-title">Pingky</h3>
+                  <p class="product-card-discription">Stylish cafe chair</p>
+                  <p class="product-card-price">800 euro</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-card">
+              <a href="#" class="product-card-link">
+                <img
+                  src="./assists/Images/products/image8.png"
+                  alt="sofa"
+                  class="product-card-image"
+                />
+                <div class="product-card-wrapper">
+                  <h3 class="product-card-title">Potty</h3>
+                  <p class="product-card-discription">Stylish cafe chair</p>
+                  <p class="product-card-price">850 euro</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="page-buttons">
+            <button class="page-button active">1</button>
+            <button class="page-button">2</button>
+            <button class="page-button">3</button>
+            <button class="page-button">Next</button>
+          </div>
+        </section>
+
+        <section class="rewards">
+          <ul class="rewards-list">
+            <li class="rewards-list-item">
+              <div class="rewards-image">
+                <span class="material-symbols-outlined">
+                  trophy
+                  </span>
+              </div>
+              <div class="rewards-info">
+                <h4 class="rewards-info-title">High Quality</h4>
+                <p class="rewards-info-text">crafted from top materials</p>
+              </div>
+            </li>
+
+            <li class="rewards-list-item">
+              <div class="rewards-image">
+                <span class="material-symbols-outlined">
+                  trophy
+                  </span>
+              </div>
+              <div class="rewards-info">
+                <h4 class="rewards-info-title">High Quality</h4>
+                <p class="rewards-info-text">crafted from top materials</p>
+              </div>
+            </li>
+
+            <li class="rewards-list-item">
+              <div class="rewards-image">
+                <span class="material-symbols-outlined">
+                  trophy
+                  </span>
+              </div>
+              <div class="rewards-info">
+                <h4 class="rewards-info-title">High Quality</h4>
+                <p class="rewards-info-text">crafted from top materials</p>
+              </div>
+            </li>
+
+            <li class="rewards-list-item">
+              <div class="rewards-image">
+                <span class="material-symbols-outlined">
+                  trophy
+                  </span>
+              </div>
+              <div class="rewards-info">
+                <h4 class="rewards-info-title">High Quality</h4>
+                <p class="rewards-info-text">crafted from top materials</p>
+              </div>
+            </li>
+            
+          </ul>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-content">
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a href="./home-page.html" class="footer-link">Funiro.</a>
+              <p class="adrress">
+                1234 North Avenue Luke Lane, South Bend, IN 360001
+              </p>
+            </li>
+
+            <li class="footer-links">
+              <h4 class="footer-items">Links</h4>
+              <ul class="footer-links-list">
+                <li class="footer-links-item">
+                  <a href="#" class="footer-links-link">Home</a>
+                </li>
+                <li class="footer-links-item">
+                  <a href="#" class="footer-links-link">Shop</a>
+                </li>
+                <li class="footer-links-item">
+                  <a href="#" class="footer-links-link">About</a>
+                </li>
+                <li class="footer-links-item">
+                  <a href="#" class="footer-links-link">Contact</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="footer-support">
+              <h4 class="footer-items">Support</h4>
+              <ul class="footer-support-list">
+                <li class="footer-support-item">
+                  <a href="#" class="footer-support-link">FAQ</a>
+                </li>
+                <li class="footer-support-item">
+                  <a href="#" class="footer-support-link">Terms & Conditions</a>
+                </li>
+                <li class="footer-support-item">
+                  <a href="#" class="footer-support-link">Privacy Policy</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="footer-social-media">
+              <h4 class="footer-items">Follow Us</h4>
+              <ul class="footer-social-media-list">
+                <li class="footer-social-media-item">
+                  <a href="#" class="footer-social-media-link">Facebook</a>
+                </li>
+                <li class="footer-social-media-item">
+                  <a href="#" class="footer-social-media-link">Instagram</a>
+                </li>
+                <li class="footer-social-media-item">
+                  <a href="#" class="footer-social-media-link">Twitter</a>
+                </li>
+                <li class="footer-social-media-item">
+                  <a href="#" class="footer-social-media-link">Pinterest</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <p class="policy">2023 furino. All rights reverved</p>
+        </div>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
