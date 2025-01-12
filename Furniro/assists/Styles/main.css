@@ -78,6 +78,41 @@
   color: var(--default-text-color);
 }
 
+.vector{
+  width: 100%;
+  height: 300px;
+
+  background-image: url(../Images/shop-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.vector-title{
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+  color: var(--room-catagory--color);
+}
+
+.vector-steps{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
 /* Product cards */
 
 .products {
