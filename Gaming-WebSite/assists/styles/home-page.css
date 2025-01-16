@@ -9,27 +9,26 @@
 
 .cryengine {
   position: absolute;
-  top: 60%;
+  top: 90%;
   left: 40%;
 }
 
 .unity {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 55%;
 }
 
 .unreal {
   position: absolute;
-  top: 50%;
-  left: 80%;
+  top: 70%;
+  left: 85%;
 }
 
 /* First section in the header */
 
 .first-section {
-  padding: 0 50px;
-  margin-top: 100px;
+  padding: 0 100px;
 }
 
 .introduction {
@@ -75,7 +74,7 @@
 
 .second-section {
   margin-top: 300px;
-  padding: 0 50px;
+  padding: 0 100px;
 
   display: flex;
   flex-direction: column;
@@ -145,7 +144,7 @@
 }
 
 .third-section-container {
-  padding: 0 50px;
+  padding: 0 100px;
 
   display: flex;
   flex-direction: column;
@@ -281,7 +280,7 @@
 
 .fifth-section {
   margin-top: 100px;
-  padding: 0 50px;
+  padding: 0 100px;
 
   display: flex;
   flex-direction: column;
