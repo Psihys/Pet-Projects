@@ -1,0 +1,396 @@
+.service-section {
+  margin-top: 100px;
+}
+
+.service-container {
+  margin: auto;
+  padding: 0 100px;
+  max-width: 1200px;
+  color: var(--default-text-color);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.service-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 33px;
+  font-weight: bold;
+}
+
+.service-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: medium;
+}
+
+.achievements-list {
+  width: 100%;
+  padding: 50px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+
+  background-color: var(--thirdly-background-color);
+  border-radius: 20px;
+}
+
+.achievements-list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.achievements-list-item span {
+  color: var(--primary-text-color);
+  padding: 20px 20px;
+  background-color: var(--secondary-background-color);
+  border-radius: 50%;
+}
+
+.achievements-list > .achievements-list-item:nth-child(2)::before {
+  content: '';
+  width: 3px;
+  height: 100px;
+  background-color: var(--default-text-color);
+  border-radius: 20px;
+  margin-right: 100px;
+}
+
+.achievements-list > .achievements-list-item:nth-child(2):after {
+  content: '';
+  width: 4px;
+  height: 100px;
+  background-color: var(--default-text-color);
+  border-radius: 20px;
+  margin-left: 100px;
+}
+
+.achievements-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.achievements-item-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.achievements-item-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: medium;
+}
+
+/* Our advantages section */
+
+.our-advantages {
+  margin-top: 100px;
+  padding: 0 100px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+
+  color: var(--default-text-color);
+}
+
+.our-video iframe {
+  border-radius: 20px;
+  overflow: hidden;
+  width: 650px;
+  height: 350px;
+}
+
+.advantages-info {
+  max-width: 350px;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.advantages-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.advantages-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: medium;
+}
+
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.advantages-list-item {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.advantages-list-item span {
+  background-color: var(--check-background-color);
+  color: var(--default-background-color);
+  border-radius: 50%;
+}
+
+/* Article section */
+
+.articles {
+  margin-top: 150px;
+}
+
+.article {
+  height: 450px;
+  margin-bottom: 150px;
+  padding: 0 100px;
+  color: var(--default-text-color);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.article-content {
+  max-width: 550px;
+  height: auto;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.article-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: medium;
+}
+
+.article-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-weight: 200;
+}
+
+.article-additional-info {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-weight: 200;
+}
+
+.article-image img {
+  width: 500px;
+  height: auto;
+}
+
+.read-more-link {
+  width: 150px;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--default-text-color);
+  background-color: var(--primary-text-color);
+  padding: 10px 30px;
+}
+
+/* Customers section */
+
+.customers {
+  padding: 100px;
+  margin-top: 150px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  color: var(--default-text-color);
+  background-color: var(--thirdly-background-color);
+}
+
+.customers-title {
+  width: 400px;
+
+  text-align: center;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.customers-description {
+  width: 500px;
+  text-align: center;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.cards-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.cards-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-item {
+  width: 400px;
+  height: 250px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 3px solid var(--default-text-color);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.customer-content {
+  padding: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.customer-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.customer-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.customer-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: medium;
+}
+
+.customer-location {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.customer-rate {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.rate {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.customer-rate img {
+  width: 15px;
+  height: 15px;
+  margin-bottom: 3px;
+}
+
+.slider-navigation {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dots-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--secondary-background-color);
+    cursor: pointer;
+  }
+  
+  .activeDots {
+    background-color: var(--default-background-button-color);
+    transform: scale(1.5);
+    transition: transform 0.5s ease, background-color 0.5s ease;
+  }
+  
+  .navigation-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .prev-button,
+  .next-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--default-background-button-color);
+    cursor: pointer;
+  }
