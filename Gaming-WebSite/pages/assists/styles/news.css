@@ -1,0 +1,42 @@
+
+
+.news-intro{
+    margin-top: 100px;
+    padding: 0 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    color: var(--default-text-color);
+}
+
+.news-title{
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.news-description{
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.news-serch-form{
+    margin: auto;
+    padding: 20px;
+
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    background-color: var(--additional-background-color);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 0 20px;
+}
