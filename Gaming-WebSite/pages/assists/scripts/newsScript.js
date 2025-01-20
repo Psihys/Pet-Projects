@@ -1,5 +1,5 @@
 const newsList = document.querySelectorAll('.today-news');
-const imageFolder = '../../../images/news-page/image';
+const imageFolder = '../images/news-page/image';
 const startIndex = 3;
 const endIndex = 10;
 
@@ -18,10 +18,10 @@ const addArticles = () => {
       const article = document.createElement('div');
       article.classList.add('article');
 
-      const articleImage = document.createElement('img');
-      articleImage.src = `${imageFolder}${i}.png`;
-      articleImage.alt = 'Article Image';
-      article.appendChild(articleImage);
+      const img = document.createElement('img');
+      img.src = `../images/news-page/image${i}.png`;
+      img.alt = 'Article Image';
+      article.appendChild(img);
 
       const articleInfo = document.createElement('div');
       articleInfo.classList.add('article-info');
