@@ -29,6 +29,8 @@
   --first-motto-bg-color-hover: rgba(176, 0, 220 );
   --second-motto-bg-color-hover: rgba(220, 66, 0);
   --third-motto-bg-color-hover: rgba(0, 220, 141);
+
+  
 }
 
 body {
@@ -37,6 +39,7 @@ body {
 }
 
 .code-container {
+  width: 100%;
   margin: auto;
   max-width: 1440px;
 }
