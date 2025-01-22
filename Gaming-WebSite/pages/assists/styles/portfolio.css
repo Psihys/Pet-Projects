@@ -264,13 +264,15 @@
 .slider {
   position: relative;
   width: 100%;
-  margin: auto;
+  max-width: 1260px;
   overflow: hidden;
 }
 
 .cards-wrapper {
   display: flex;
   transition: transform 0.5s ease;
+  will-change: transform;
+  width: max-content; 
 }
 
 .cards-list {
@@ -349,48 +351,48 @@
 }
 
 .slider-navigation {
-    padding: 20px 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .dots-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: var(--secondary-background-color);
-    cursor: pointer;
-  }
-  
-  .activeDots {
-    background-color: var(--default-background-button-color);
-    transform: scale(1.5);
-    transition: transform 0.5s ease, background-color 0.5s ease;
-  }
-  
-  .navigation-buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .prev-button,
-  .next-button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: var(--default-background-button-color);
-    cursor: pointer;
-  }
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dots-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--secondary-background-color);
+  cursor: pointer;
+}
+
+.activeDots {
+  background-color: var(--default-background-button-color);
+  transform: scale(1.5);
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.navigation-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.prev-button,
+.next-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--default-background-button-color);
+  cursor: pointer;
+}
