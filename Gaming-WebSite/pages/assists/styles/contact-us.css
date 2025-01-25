@@ -1,0 +1,122 @@
+.contact-intro{
+    margin-top: 100px;
+    padding: 0 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    color: var(--default-text-color);
+}
+
+.contact-title{
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.contact-description{
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+.our-company{
+    margin-top: 100px;
+    padding: 0 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    color: var(--default-text-color);
+}
+
+.map{
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.our-contacts{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.our-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.media-text{
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.our-media > .media-icons > a {
+    width: 35px;
+    height: 35px;
+}
+
+.our-phone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.our-phone::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    right: -50%;
+    background-color: var(--default-text-color);
+}
+
+.our-phone::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    left: -50%;
+    background-color: var(--default-text-color);
+}
+
+.our-phone > a {
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 16px;
+    font-weight: 300;
+
+    color: var(--default-text-color);
+}
+
+.our-location{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.location-description{
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 16px;
+    font-weight: 300;
+
+    max-width: 300px;
+}

@@ -1,19 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const prevButtonPortfolio = document.querySelector('.prev-button');
-  const nextButtonPortfolio = document.querySelector('.next-button');
+  const prevButton = document.querySelector('.prev-button');
+  const nextButton = document.querySelector('.next-button');
   const cardsWrapper = document.querySelector('.cards-wrapper');
   const cards = document.querySelectorAll('.card-item');
   const dots = document.querySelectorAll('.dot');
 
+  const visibleCards = 3; // Number of cards visible at a time
+  const totalCards = cards.length;
   let currentIndex = 0;
 
   function updateSlider() {
-    if (!cardsWrapper || !cards.length) {
-      console.error('Cards wrapper or card items are missing!');
-      return;
-    }
-
-    const cardWidth = cards[0].getBoundingClientRect().width;
+    const cardWidth = cards[0].getBoundingClientRect().width + 20; // Adding gap
     cardsWrapper.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
 
     // Update dots
@@ -29,13 +26,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  prevButtonPortfolio.addEventListener('click', () => {
-    currentIndex = currentIndex === 0 ? cards.length - 1 : currentIndex - 1;
+  prevButton.addEventListener('click', () => {
+    currentIndex = currentIndex === 0 ? totalCards - visibleCards : currentIndex - 1;
     updateSlider();
   });
 
-  nextButtonPortfolio.addEventListener('click', () => {
-    currentIndex = currentIndex === cards.length - 1 ? 0 : currentIndex + 1;
+  nextButton.addEventListener('click', () => {
+    currentIndex = currentIndex === totalCards - visibleCards ? 0 : currentIndex + 1;
     updateSlider();
   });
 
